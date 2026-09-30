@@ -6,11 +6,7 @@ public class Product {
     private String name;
     private double price;
 
-    public Product() {
-        id = null;
-        name = "";
-        price = 0.0d;
-    }
+    public Product() {}
 
     public Product(Long id, String name, double price) {
         this.id = id;
