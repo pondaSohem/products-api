@@ -40,11 +40,7 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- ================================================================
-             WEEK 1 - ACTIVITY 2
-             Add the springdoc-openapi dependency below this comment block.
-             The exact <dependency> block is given in the Week 1 lab guide.
-             ================================================================ -->
+
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
