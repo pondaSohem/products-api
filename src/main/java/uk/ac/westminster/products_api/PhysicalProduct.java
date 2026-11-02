@@ -1,5 +1,8 @@
 package uk.ac.westminster.products_api;
 
+// A PhysicalProduct IS-A Product because...
+// Order would not make sense here
+
 public class PhysicalProduct extends Product
 {
     private double weightKg;
