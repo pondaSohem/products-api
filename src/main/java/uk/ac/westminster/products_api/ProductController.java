@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/products")
 public class ProductController {
@@ -27,6 +29,9 @@ public class ProductController {
     {
         return productService.addProduct(product);
     }
+
+    @GetMapping("/products/summaries")
+    public List<String> getSummaries() { return productService.getAllSummaries(); }
 
     @DeleteMapping("/products/{id}")
     public void deleteProduct(@PathVariable Long id)

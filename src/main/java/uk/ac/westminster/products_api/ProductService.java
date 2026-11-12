@@ -45,4 +45,15 @@ public class ProductService {
     {
         return products.stream().filter(p -> p.getName().contains(name)).toList();
     }
+
+    public List<String> getAllSummaries()
+    {
+        List<String> loopArray = new ArrayList<>();
+        for (Product product : products)
+        {
+            loopArray.add(product.getSummary());
+        }
+
+        return loopArray;
+    }
 }
